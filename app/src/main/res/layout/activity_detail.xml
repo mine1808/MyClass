@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/baseline_first_page_24"
+        android:contentDescription="back" />
+
+    <ImageView
+        android:id="@+id/student_img"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:src="@drawable/scoups"/>
+
+    <TextView
+        android:id="@+id/student_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Choi Seungcheol"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="40sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/student_nim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="22/505621/SV/21841"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="20sp"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/student_gpa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/poppins_semibold_italic"
+        android:textSize="40sp"
+        android:text="4.0"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/student_posisi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/poppins_bold"
+        android:text="SVT CLASS A-22"
+        android:textColor="@color/white"
+        android:textSize="40sp" />
+
+</LinearLayout>

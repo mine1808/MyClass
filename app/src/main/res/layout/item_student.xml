@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="@color/material_dynamic_primary90"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    app:cardMaxElevation="10dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/student_svt"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/scoups" />
+
+        <TextView
+            android:id="@+id/txt_svt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/student_svt"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Choi Seungcheol"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_svt_nim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_svt_name"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/student_svt"
+            android:fontFamily="@font/poppins_medium"
+            android:text="22/504947/SV/81995"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/txt_svt_gpa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_svt_name"
+            android:fontFamily="@font/poppins_semibold_italic"
+            android:layout_toEndOf="@id/txt_svt_nim"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20sp"
+            android:text="4.0"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
